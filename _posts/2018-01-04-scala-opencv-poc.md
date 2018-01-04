@@ -10,6 +10,11 @@ tags:
   - sbt
 toc: true
 ---
-dcdc
 
-### Hello
+### Project setup with SBT
+
+Simply add plugin in `project/plugins.sbt`
+
+```scala
+addSbtPlugin("org.bytedeco" % "sbt-javacv" % "1.15")
+```
