@@ -84,8 +84,8 @@ analytics:
 # Site Author
 author:
   name             : "Michal Zurek"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "just a developer"
+  avatar           : "/assets/images/image-bio.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "full stack backend developer"
   location         : "Gibraltar"
   email            :
   uri              :
@@ -96,16 +96,16 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/pasikon/"
+  github           : "pasikon"
   gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
   linkedin         : "michal-zurek-601a2a86" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
-  pinterest        :
+  pinterest        : "michalzurek7"
   soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+  stackoverflow    : "1528182/michal777" # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
   twitter          :
