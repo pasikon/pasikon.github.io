@@ -11,11 +11,12 @@ tags:
 toc: true
 ---
 
-[^1]: <https://github.com/pasikon/opencv-scala>
-[^2]: <https://github.com/bytedeco/sbt-javacv>
+[^1]: <https://github.com/bytedeco/sbt-javacv>
 
 Recently I needed to setup a stream of images to feed my trained CNN (Convolutional Neural Network). At the time of training the model I was using OpenCV library with Python for image manipulation. 
+
 Now having Tensorflow model exported I wanted to integrate it with some infrastructure. 
+
 So the first challenge is to find out how to use OpenCV with Scala, then to figure out how to serialize it properly and also check how this all refers to Java API. Since image manipulation is not something I do in Scala every day, here is some quick research :)  
 
 [Full example](https://github.com/pasikon/opencv-scala)
@@ -56,7 +57,7 @@ opencv_imgproc.resize(matSrc, matDst, size)
 
 ### Serialization
 
-1. Serialize
+#### Serialize
 
 What I need to get is `Array[Bytes]` from `Mat`:
 
@@ -65,7 +66,7 @@ val darr: Array[Byte] = new Array[Byte]((matDst.total() * matDst.channels()).toI
 matDst.data().get(darr)
 ```
 
-2. Deserialize
+#### Deserialize
 
 Now, let's check if I have done it properly, from obtained `Array[Bytes]` I want to create another `Mat`, serialize it again and create image object with Java API. Displaying image that Java object is holding will prove correct OpenCV, Scala & Java API usage
 
@@ -77,7 +78,7 @@ val darrMyPic: Array[Byte] = new Array[Byte]((myPic.total() * myPic.channels()).
 myPic.data().get(darrMyPic)
 ``` 
 
-3. As Java object & display
+#### As Java object & display
 
 ```scala
 try {
