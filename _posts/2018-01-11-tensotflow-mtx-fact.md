@@ -36,7 +36,7 @@ mtx = df.fillna(0).as_matrix().astype(np.float32)
 
 Ratings by users are represented by `mtx` matrix.
 
-Of course as in real world not all products are rated - `np.nan` represents product with no rarting by user. Recommender engine job is to find out the ratings users would like to give to unrated products and on this basis to recommend these prodcuts to them.
+Of course as in real world not all products are rated - `np.nan` represents product with no rating by user. Recommender engine job is to find out the ratings users would like to give to unrated products and on this basis to recommend these prodcuts to them.
 
 Here it comes the matrix factorization algorithm, matrix `mtx` can be represented as product of two matrixes `p of shape (mtx.shape[0], k)` and `q of shape (mtx.shape[1], k).T` where `k` is number of specific attributes the users and products have. Based on these `k` attributes (features) we can predict missing ratings that is `np.nan` values in `d`.
 
