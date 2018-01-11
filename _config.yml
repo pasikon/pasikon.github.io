@@ -84,7 +84,7 @@ analytics:
 # Site Author
 author:
   name             : "Michal Zurek"
-  avatar           : "/assets/images/image-bio.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/mypic.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "full stack backend developer"
   location         : "Gibraltar"
   email            :
