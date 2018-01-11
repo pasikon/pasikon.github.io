@@ -8,6 +8,7 @@ tags:
   - tensorflow
   - python
   - matrix factorization
+  - recommender
 toc: false
 ---
 
