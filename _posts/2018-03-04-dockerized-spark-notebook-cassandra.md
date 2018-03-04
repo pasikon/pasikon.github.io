@@ -18,7 +18,7 @@ If you are in need of creating environment to do some Data Science, experiment o
 
 First thing you do is simply go to http://spark-notebook.io/ and request building of Docker image that meets your requirements, I have chosen like this:
 
-![no-alignment](assets/images/screenshot-spark-notebook.png)
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/screenshot-spark-notebook.png)
 
 You also put your email there below in order ot be informed that build has completed & receive links to it.
 
