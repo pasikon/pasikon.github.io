@@ -18,7 +18,7 @@ If you are in need of creating environment to do some Data Science, experiment o
 
 First thing you do is simply go to http://spark-notebook.io/ and request building of Docker image that meets your requirements, I have chosen like this:
 
-![Spark Notebook image props](assets/images/screenshot-spark-notebook.png){:class="img-responsive"}
+![no-alignment]({{ site.url }}{{ site.baseurl }}(/assets/images/screenshot-spark-notebook.png)
 
 You also put your email there below in order ot be informed that build has completed & receive links to it.
 
@@ -70,9 +70,11 @@ docker run -d --net lizard --name sp_notebook -p 9000:9000 -p 4040-4045:4040-404
 
 Now navigate to http://localhost:9000/, you will see directory structure with example notebooks provided with Spark Notebook.
 
+Open `cassandra/Getting Started with Spark and Cassandra` notebook.
+
 First 4 cells in the notebook about setting up cassandra-connector dependecies & other configuration are obsolete, to confugure up our dockerized Cassandra instance do the following:
 
-Open `cassandra/Getting Started with Spark and Cassandra`, then `Edit/Edit Notebook Metadata` menu and paste there updated config:
+Click `Edit/Edit Notebook Metadata` menu and paste there updated config:
 
 ```json
 "customLocalRepo": "/tmp/repo",
