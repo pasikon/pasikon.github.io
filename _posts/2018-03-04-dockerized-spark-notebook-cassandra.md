@@ -18,7 +18,7 @@ If you are in need of creating environment to do some Data Science, experiment o
 
 First thing you do is simply go to http://spark-notebook.io/ and request building of Docker image that meets your requirements, I have chosen like this:
 
-![no-alignment]({{ site.url }}{{ site.baseurl }}(/assets/images/screenshot-spark-notebook.png)
+![no-alignment](assets/images/screenshot-spark-notebook.png)
 
 You also put your email there below in order ot be informed that build has completed & receive links to it.
 
@@ -54,13 +54,13 @@ Let's start all stuff, all in the same `lizard` network. Docker command argument
 
 Please notice that we are specifying names for all containers to reference them later!
 
-Cassandra:
+#### Cassandra:
 
 ```bash
 docker run --net lizard --name liz-cass -d -e CASSANDRA_BROADCAST_ADDRESS=0.0.0.0 -p 7000:7000 -p 7199:7199 -p 9042:9042 -p 9160:9160 cassandra:latest
 ```
 
-Spark Notebook:
+#### Spark Notebook:
 
 ```bash
 docker run -d --net lizard --name sp_notebook -p 9000:9000 -p 4040-4045:4040-4045 -v v:/shared:/win_shared andypetrella/spark-notebook:0.9.0-SNAPSHOT-scala-2.11.8-spark-2.2.1-hadoop-2.7.2-with-hive
