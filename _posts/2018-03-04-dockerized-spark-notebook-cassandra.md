@@ -16,13 +16,13 @@ If you are in need of creating environment to do some Data Science, experiment o
 
 ### Assemble Spark Notebook distribution
 
-First thing you do is simply go to http://spark-notebook.io/ and request building of Docker image that meets your requirements, I have chosen like this:
+First thing you do is simply go to [spark-notebook.io](http://spark-notebook.io/) and request building of Docker image that meets your requirements, I have chosen like this:
 
 ![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/screenshot-spark-notebook.png)
 
 You also put your email there below in order ot be informed that build has completed & receive links to it.
 
-NOTE: in my case the Docker image name was wrongly specified, snapshot version was incorect. If you are building from master you need to paste correct snapshot version there.
+**NOTE:** in my case the Docker image name was wrongly specified, snapshot version was incorect. If you are building from master you need to paste correct snapshot version there.
 
 Ok so we got email containing something like this:
  
@@ -50,7 +50,7 @@ docker network create --driver=bridge --subnet=192.168.0.0/16 lizard
 
 ### Create all required containers
 
-Let's start all stuff, all in the same `lizard` network. Docker command argument are let's say basic ones, really easy to find the meaning with Docker Documentation :)
+Let's start all stuff, all in the same `lizard` network. Docker command argument are let's say basic ones, really easy to find their meaning with Docker Documentation :)
 
 Please notice that we are specifying names for all containers to reference them later!
 
