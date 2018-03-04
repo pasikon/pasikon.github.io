@@ -90,5 +90,5 @@ I have updated connector to newest available version, also please note that we c
 
 After that restart kernel by `Kernel/Restart` menu, open browser console (F12 ?) to see new dependency being downloaded, also if theres any error it will be displyed there.
 
-Go to notebook section `Create a keyspace and a table for our test` and you should be able to run all the examples contining creating some schema in Cassandra and writing RDD data there.
+Go to notebook section `Create a keyspace and a table for our test` and you should be able to run all the examples below. Its about creating some schema in Cassandra and writing RDD data there.
 
